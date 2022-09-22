@@ -8,7 +8,7 @@ echo "Please ensure that all volunteer laptops requiring updates are switched on
 
 echo ""
 
-ansible -m command -a "pacman -Syyu --noconfirm" volunteerlaptops --become --become-method sudo
+ansible -m command -a 'pacman -Syyu --noconfirm' volunteerlaptops --become --become-method 'sudo'
 
 echo ""
 
