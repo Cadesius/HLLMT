@@ -22,7 +22,7 @@ echo -e "\nDownloading scripts and setting them as system executable...\n"
 
 wget https://raw.githubusercontent.com/Cadesius/HLLMT/main/volunteer-laptops-tools-help.sh
 wget https://raw.githubusercontent.com/Cadesius/HLLMT/main/volunteer-laptops-tools-update.sh
-wget https://github.com/Cadesius/HLLMT/raw/main/volunteer-laptop-tools-setup.sh
+wget https://github.com/Cadesius/HLLMT/raw/main/volunteer-laptops-tools-setup.sh
 wget https://github.com/Cadesius/HLLMT/raw/main/alias-commands
 wget https://github.com/Cadesius/HLLMT/raw/main/server-list
 
