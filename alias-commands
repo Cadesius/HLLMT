@@ -1,4 +1,5 @@
 alias configure-volunteer-laptops="sudo nano /etc/ansible/hosts"
+alias setup-volunteer-laptops="./volunteer-laptops-tools-setup.sh"
 alias shutdown-volunteer-laptops="ansible -m command -a 'shutdown now' volunteerlaptops"
 alias update-volunteer-laptops="./volunteer-laptops-tools-update.sh"
 alias volunteer-laptops-help="./volunteer-laptops-tools-help.sh"

@@ -45,5 +45,5 @@
 # Insert volunteer laptop users, IP addresses and passwords below:
 
 [volunteerlaptops]
-swht-volunteer@10.11.21.140 ansible_become_pass="D5gital15"
+# swht-volunteer@10.11.21.140 ansible_become_pass="D5gital15"
 # user@192.168.1.1 ansible_become_pass="password"
