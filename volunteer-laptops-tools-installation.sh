@@ -16,12 +16,12 @@ ssh-copy-id swht-volunteer@10.11.21.140
 echo -e "\nUpdating Ansible host list...\n"
 
 sudo rm /etc/ansible/hosts
-sudo wget ../hosts -P /etc/ansible/
+sudo wget https://raw.githubusercontent.com/Cadesius/HLLMT/main/hosts -P /etc/ansible/
 
 echo -e "\nDownloading scripts and setting them as system executable...\n"
 
-wget ../volunteer-laptops-help.sh
-wget ../volunteer-laptops-update.sh
+wget https://raw.githubusercontent.com/Cadesius/HLLMT/main/volunteer-laptops-tools-help.sh
+wget https://raw.githubusercontent.com/Cadesius/HLLMT/main/volunteer-laptops-tools-update.sh
 
 sudo chmod +x volunteer-laptops-help.sh
 sudo chmod +x volunteer-laptops-update.sh
