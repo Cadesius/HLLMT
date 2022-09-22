@@ -22,14 +22,15 @@ echo -e "\nDownloading scripts and setting them as system executable...\n"
 
 wget https://raw.githubusercontent.com/Cadesius/HLLMT/main/volunteer-laptops-tools-help.sh
 wget https://raw.githubusercontent.com/Cadesius/HLLMT/main/volunteer-laptops-tools-update.sh
+wget https://github.com/Cadesius/HLLMT/raw/main/alias-commands
 
 sudo chmod +x volunteer-laptops-tools-help.sh
 sudo chmod +x volunteer-laptops-tools-update.sh
 
-alias configure-volunteer-laptops="sudo nano /etc/ansible/hosts"
-alias shutdown-volunteer-laptops="ansible -m command -a 'shutdown now' volunteerlaptops"
-alias update-volunteer-laptops="./volunteer-laptops-tools-update.sh"
-alias volunteer-laptops-help="./volunteer-laptops-tools-help.sh"
+sudo cat alias-commands >> .bash_aliases
+source .bashrc
+
+rm alias-commands
 
 echo -e "\nTesting connection to volunteer laptops, if any errors are detected - panic.\n"
 
